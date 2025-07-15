@@ -1,0 +1,138 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    margin: 0;
+}
+
+.page-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #7c51a9;
+    color: #f0f0f0;
+    text-align: center;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #9a729f;
+    padding-left: 20px;
+    color: rgba(211, 249, 253, 0.881);
+}
+
+footer a {
+    text-decoration: none;
+    font-size: medium;
+    color: rgba(150, 245, 255, 0.881);
+}
+
+nav {
+    background-color: #4c2a85;
+    flex-basis: 220px;;
+    flex-shrink: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+nav img {
+    margin-top: 10px;
+    background-color: azure;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+nav li a:hover {
+    color: #623d91;
+    background-color: rgb(93, 20, 86);
+}
+
+main {
+    padding: 25px;
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: rgb(240, 255, 253);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+
+.tostart {
+    padding-top: 0px;
+    padding-left: -10px;
+    color: #7f67a8;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+h3 {
+    font-size: 1.25rem;
+    padding-left: 20px;
+}
+
+h4 {
+    font-size: 1.0rem;
+    padding-left: 30px;
+}
+
+h5 {
+    font-size: 0.85rem;
+    padding-left: 50px;
+}
+
+h2, h3, h4, h5 {
+    color: #4c2a85;
+}
+
+li a {
+    color: #4c2a85;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+div h2:hover {
+    background-color: rgb(252, 244, 251);
+}
+div h3:hover {
+    background-color: rgb(252, 244, 251);
+}
+
+div h4:hover {
+    background-color: rgb(252, 244, 251);
+}
+
+div h5:hover {
+    background-color: rgb(252, 244, 251);
+}

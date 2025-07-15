@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="styles.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DIO</title>
+</head>
+<body>
+    <div class="page-container">
+        <nav>
+            <img src="https://hermes.digitalinnovation.one/assets/diome/logo.png" 
+            width="150" alt="Logo da DIO">
+            <ul>
+                <li><a href="#start">Início</a></li>
+                <li><a href="#tags">Formulários</a></li>
+                <li><a href="#struct">Estrutura e Formatação</a></li>
+                <li><a href="#media">Mídias</a></li>
+                <li><a href="#tables">Tabelas</a></li>
+                <li><a href="#semantic">Semântica</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <header>
+                <h1 id="start">Meus primeiros passos no HTML</h1>
+                <hr>
+                <p>Aqui vamos ao resumo do conteúdo aprendido por mim no Bootcamp da DIO.</p>
+            </header>
+            <main>
+                <section id="tags">
+                    <h2>Tags</h2>
+                    <a class="tostart" href="#start"><sup>voltar</sup></a>
+                    <p>Existe uma quantidade muito grande de tags de HTML, aqui destacarei as de maior destaque no decorrer do curso até então:</p><br>
+                    <h3>Inputs</h3>
+                    <p>Para os inputs podemos ainda destacar o type como:</p>
+                    <h4>Text</h4>
+                        <p>Para texto comum.</p>
+                    <h4>E-mail</h4>
+                        <p>Para validação do próprio browser em campos de e-mail.</p>
+                    <h4>Password</h4>
+                        <p>Para proteger caracteres de senha com recursos do browser.</p>
+                    <h4>Number</h4>
+                        <p>Para garantir que o campo seja preenchido com números.</p>
+                    <h4>Button</h4>
+                        <p>Clássico botão, porém não encorajado. Preferencialmente usar a própria tag button.</p>
+                    <h4>Range</h4>
+                        <p>Um seletor de alcance numérico definido, comum para ajuste de volume.</p>
+                    <h4>URL</h4>
+                        <p>Validador de url para o campo.</p>
+                    <h4>Dates</h4>
+                        <p>Selecionar data, possível utilizar month ou week também, à depender do browser.</p>
+                    <h4>File</h4>
+                        <p>Selecionar arquivo, útil para fazer uploads.</p>
+                    <h4>Search</h4>
+                        <p>Não difere muito do text, porém o navegador renderiza ligeiramente diferente.</p>
+                    <h4>Submit</h4>
+                        <p>Utilizado para fazer envio de formulários.</p>
+                    <h4>Button</h4>
+                        <p>Buttons podem ser do tipo <strong>submit</strong>, <strong>reset</strong> ou até mesmo <strong>vazio/void</strong>.</p><br>
+                    <h4>Selectors</h4>
+                    <h5>Checkbox</h5>
+                        <p>Seleção de múltiplos itens.</p>
+                    <h5>Radio</h5>
+                        <p>Seleção de um único item.</p>
+                </section>
+
+                <section id="struct">
+                    <h2>Estrutura e Formatação</h2>
+                    <a class="tostart" href="#start"><sup>voltar</sup></a>
+                    <h3>Formulários</h3>
+                    <p>Para fazer um formulário, uso a tag <strong>form</strong>, preciso
+                        também especificar se ele vai ser do tipo <strong>get</strong> ou do 
+                        tipo <strong>post</strong>, um para requisitar dados de um servidor, 
+                        os dados são anexados na URL, ideal para buscas e filtros. O outro 
+                        para enviar dados para um servidor, os dados vão no corpo de requisição, 
+                        não na URL.
+                    </p>
+                    <p>Dentro do form, vão os campos com as informações que quero 
+                        trabalhar, além de no final pelo menos um <strong>button</strong> 
+                        para enviar o formulário.
+                    </p>
+                    <hr>
+                    <h3>Formatando o texto</h3>
+                    <p>
+                        Temos diversas tags para formatar texto, vamos focar nas principais.
+                        <ul>
+                            <li>
+                                <strong>Strong</strong>
+                            <p>
+                                Parecido com o negrito, porém com carga semântica, ressaltando 
+                                grande importância.
+                            </p>
+                            </li>
+
+                            <li>
+                                <i>Itálico</i>
+                            <p>
+                                Que é majoritariamente utilizado para citações e metáforas, 
+                                mas o uso é diverso.
+                            </p>
+                            </li>
+
+                            <li>
+                                <b>Negrito</b>
+                            <p>
+                                Clássico utilizado para destaque visual no texto, mas sem carga 
+                                de importância atrelada.
+                            </p>
+                            </li>
+
+                            <li>
+                                <u>Sublinhado</u>
+                            <p>
+                                Também utilizado para gerar destaque.
+                            </p>
+                            </li>
+
+                            <li>
+                                <b><u>Sublinhado + Negrito</u></b>
+                            <p>
+                                Também é possível combinar ambos.
+                            </p>
+                            </li>
+
+                            <li>
+                                <mark>Mark</mark>
+                            <p>
+                                Efeito de marca texto.
+                            </p>
+                            </li>
+
+                            <li>
+                                <sup>Sup</sup>
+                            <p>
+                                Alinhamento superior, útil para potenciação.
+                            </p>
+                            </li>
+
+                            <li>
+                                <Sub>Sub</Sub>
+                            <p>
+                                Alinhamento inferior.
+                            </p>
+                            </li>
+
+                            <li>
+                                <p>Blockquote</p>
+                            <p>
+                                <blockquote>
+                                    Alinha o texto mais à direita, utilizado para citações
+                                </blockquote>
+                            </p>
+                            </li>
+                        </ul>
+                    </p>
+                    <h3>Atributos de Tags</h3>
+                    <p>
+                        Tags também possuem atributos, são os mais diversos e dependem 
+                        totalmente da tag, porém alguns são mais abrangentes:
+                    </p>
+                        <ul>
+                            <li>id</li>
+                            <li>style</li>
+                            <li>class</li>
+                        </ul>
+                    <p>
+                        E existem as específicas de tag também, como por exemplo:
+                    </p>
+                        <h4>Input</h4>
+                        <ul>
+                            <li>type="number"</li>
+                            <li>type="text"</li>
+                            <li>type="color"</li>
+                        </ul>
+                        <h4>Img</h4>
+                        <ul>
+                            <li>src="path/URL"</li>
+                            <li>width="150"</li>
+                        </ul>
+                    <h3>Div e Span</h3>
+                    <p>
+                        Div e span são separadores que podem diferenciar os conteúdos, 
+                        facilitando assim sua formatação pelo CSS.
+                    </p>
+                    <h4>Div</h4>
+                    <p>
+                        Isola um envolto de tags selecionado, tornando-às 
+                        parte de si, posteriormente ao fazer referência à 
+                        div, estou associando todas as tags dentro dela.
+                    </p>
+                    <h4>Span</h4>
+                    <p>
+                        Isola fragmentos menores, como o interior de uma caixa de texto 
+                        ou botão que seja, para uma personalização ou ação mais precisa.
+                    </p>
+                    <h3>Fieldsets</h3>
+                    <p>
+                        Fieldsets são separadores de conteúdo, especialmente usado em 
+                        formulários, para delimitar seus campos. É uma separação tanto 
+                        no código quanto visual.
+                    </p>
+                    <h3>Embeds</h3>
+                    <p>
+                        Por meio da tag embed consigo inserir conteúdos diversos 
+                        na página, podendo ser praticamente qualquer coisa.
+                    </p>
+                    <h3>Iframes</h3>
+                    <p>
+                        A tag Iframes veio para substituir os Embeds, sendo possível 
+                        eu anexar qualquer tipo de conteúdo na página, com muito mais 
+                        controle sobre o conteúdo e semântica também.
+                    </p>
+                    <h3>Cores</h3>
+                    <p>
+                        Embora o HTML seja capaz de atribuir cores por atributo, esta 
+                        é a função do CSS hoje, e é visto como uma má prática.
+                    </p>
+                    <p>
+                        Por css, podemos atribuir cor de fonte, de texto, de borda, e 
+                        muito mais. Também pode-se escolher cor das seguintes formas: 
+                    </p>
+                        <ul>
+                            <li>RGB</li>
+                            <li>HEX</li>
+                            <li>HSL</li>
+                            <li>RGBA</li>
+                            <li>HSLA</li>
+                        </ul>
+                </section>
+
+                <section id="media">
+                    <h2>Mídias</h2>
+                    <a class="tostart" href="#start"><sup>voltar</sup></a>
+                    <hr>
+                    <p>
+                        Além do Iframe ter a possibilidade de incluir media externa, 
+                        temos outras tags para fins mais específicos e adequados.
+                    </p>
+                    <h3>Image</h3>
+                    <p>
+                        É possível adicionar imagens de diversos formatos, sendo os 
+                        mais comuns:
+                    </p>
+                    <ul>
+                        <li>jpeg - para imagens leves sem compromisso com a qualidade</li>
+                        <li>png - para mais riqueza em detalhes com custo maior</li>
+                        <li>svg - imagens vetoriais</li>
+                    </ul>
+                    <p>
+                        Mesmo podendo inserir um SVG pela tag img, é recomendado 
+                        utilizar a tag svg, por questões de semântica e uso.
+                    </p>
+                    <p>
+                        Também existem algumas ferramentas de acessibilidade que são:
+                    </p>
+                    <h4>Alt</h4>
+                    <p>
+                        É uma boa prática adicionar o atributo alt nas imagens, com uma 
+                        descrição bem detalhada para dar o contexto para ferramentas 
+                        de acessibilidade. 
+                    </p>
+                    <h4>Figcaption</h4>
+                    <p>
+                        Figcaption também pode colaborar para uma experiência mais 
+                        agradável de usuário, com uma descrição breve da imagem.
+                    </p>
+                    <h3>Audio</h3>
+                    <p>
+                        Executa um áudio na página, sendo controlável pela tag 
+                        controls, podendo ficar em loop ou dar autoplay, etc.
+                    </p>
+                    <h3>Video</h3>
+                    <p>
+                        Insere um video de acordo com a source indicada. Mais 
+                        indicado que o Iframe quando não for algo explicitamente 
+                        pertencente a outra fonte, como um vídeo do YouTube do 
+                        canal de um terceiro por exemplo.
+                    </p>
+                    <p>
+                        É capaz de controlar tamanho, largura, dentre diversas 
+                        outras propriedades, além de poder utilizar formatos de 
+                        vídeo secundário caso o usuário não consiga reproduzir o 
+                        principal.
+                    </p>
+                    <h3>Track</h3>
+                    <p>
+                        Track consegue atribuir legenda e até mesmo capítulos ao 
+                        vídeo, deixando o conteúdo mais claro e acessível.
+                    </p>
+                </section>
+
+                <section id="tables">
+                    <h2>Tabelas</h2>
+                    <a class="tostart"href="#start"><sup>voltar</sup></a>
+                    <p>
+                        Com a tag table consigo definir uma tabela. É possível 
+                        personalizá-la com propriedades, porém o CSS faz isso melhor.
+                        O que podemos fazer aqui é adicionar um summary para 
+                        ferramentas de acessibilidade, com uma ampla descrição dos dados.
+                    </p>
+                    <p>
+                        Com tr, indico uma table row, sendo a primeira geralmente 
+                        a th, ou table header.
+                    </p>
+                    <p>
+                        Com uma nova tr, posso começar a inserir as linhas ou rows 
+                        dentro de tds, ou table cell.
+                    </p>
+                    <p> Para cada row, preciso de uma tr, para mover entre células, 
+                        usa-se os td.
+                    </p>
+                </section>
+
+                <section id="semantic">
+                    <h2>Semântica</h2>
+                    <a class="tostart" href="#start"><sup>voltar</sup></a>
+                    <p>
+                        A semântica de uma página diz respeito ao quanto ela por 
+                        meio de suas tags estão num contexto que faz sentido, como 
+                        o conteúdo por si só se conversa com as tags mais apropriadas 
+                        e específicas possíveis.
+                    </p>
+                    <p>
+                        Uma boa semântica é essencial para Search Engine Optimization 
+                        e também para melhor desempenho de ferramentas de acessibilidade, 
+                        ou seja, é um foco de atenção indispensável nos dias de hoje.
+                    </p>
+                    <p>
+                        As principais tags para uma semântica estrutural básica são: 
+                    </p>
+                    <ul>
+                        <li>
+                            <p><b>Header</b></p>
+                        <dd>
+                            Cabeçalho, geralmente com informações da página.
+                        </dd>
+                        </li>
+
+                        <li>
+                            <p><b>Main</b></p>
+                        <dd>
+                            O conteúdo principal.
+                        </dd>
+                        </li>
+
+                        <li>
+                            <p><b>Nav</b></p>
+                        <dd>
+                            A parte de navegação.
+                        </dd>
+                        </li>
+                        <li>
+                            <p><b>Aside</b></p>
+                        <dd>
+                            Espaço reservado para propagandas, ou coisas 
+                            irrelevantes para o conteúdo em si.
+                        </dd>
+                        </li>
+
+                        <li>
+                            <p><b>Section</b></p>
+                        <dd>
+                            Separador de conteúdo parecido com o div, porém utilizado 
+                            quando o conteúdo em si tem relação entre eles, div mais genérico  
+                            útil principalmente para fins estéticos, section para fins 
+                            semânticos, mas também podendo ser utilizado para fins estéticos.
+                        </dd>
+                        </li>
+
+                        <li>
+                            <p><b>Footer</b></p>
+                        <dd>
+                            Rodapé da página, com demais informações gerais.
+                        </dd>
+                        </li>
+                    </ul>
+                    <h2>Referências</h2>
+                    <a class="tostart" href="#start"><sup>voltar</sup></a>
+                    <p>Segue algumas referências do tema:</p>
+                    <ul>
+                        <a href=""></a>
+                        <li><a href="https://www.w3schools.com/html/default.asp">W3Schools HTML</a></li>
+                        <li><a href="https://www.w3schools.com/css/default.asp">W3Schools CSS</a></li>
+                    </ul>
+                </section>
+            </main>
+
+            <footer>
+                Feito por <a href="https://github.com/maxado-dev">maxado-dev</a>.
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
